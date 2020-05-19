@@ -1,0 +1,28 @@
+{
+  "name": "extension-demo",
+  "description": "The demo is to check chrome extension whether installed and how to send and receive messages from web page ",
+  "version": null,
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "browser_action": {
+    "default_title": "extension-demo",
+    "default_popup": "popup/popup.html"
+  },
+  "externally_connectable": {
+    "matches": ["https://www.baidu.com/*"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentscript.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
