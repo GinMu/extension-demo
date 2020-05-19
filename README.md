@@ -15,3 +15,4 @@ The demo is to check chrome extension whether installed and how to send and rece
 1. [Chrome Extension](https://developer.chrome.com/extensions)
 2. [Chrome Extension Content Scripts](https://developer.chrome.com/extensions/content_scripts)
 3. [Chrome Extension Message Passing](https://developer.chrome.com/extensions/messaging)
+4. [Generate Vue Template](https://github.com/Kocal/vue-web-extension)
